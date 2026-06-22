@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/CDragon123/geo-copilot@main/assets/icons/icon-128.png" width="96" alt="GEO Copilot icon">
-</p>
-
 <h1 align="center">GEO Copilot</h1>
 
 <p align="center">
@@ -27,7 +23,7 @@
   <a href="#package-for-store-submission">Package</a>
 </p>
 
-![GEO Copilot hero](https://cdn.jsdelivr.net/gh/CDragon123/geo-copilot@main/docs/images/hero.svg)
+![GEO Copilot preview](docs/images/social-preview.png)
 
 ## Why GEO Copilot
 
@@ -40,11 +36,9 @@ GEO Copilot is built around a practical GEO loop:
 5. Publish it, wait a few days, and test the same question again.
 6. Use the review result to plan the next optimization round.
 
-![GEO Copilot workflow](https://cdn.jsdelivr.net/gh/CDragon123/geo-copilot@main/docs/images/workflow.svg)
-
 ## Preview
 
-![GEO Copilot dashboard preview](https://cdn.jsdelivr.net/gh/CDragon123/geo-copilot@main/docs/images/dashboard-preview.svg)
+The full workflow is focused on one repeatable loop: ask, capture, rewrite, publish, and review.
 
 ## Features
 
