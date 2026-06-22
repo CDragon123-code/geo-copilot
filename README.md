@@ -1,37 +1,62 @@
-# GEO Copilot
+<p align="center">
+  <img src="assets/icons/icon-128.png" width="96" alt="GEO Copilot icon">
+</p>
 
-GEO Copilot is a Chrome/Edge browser extension for product-focused GEO work. It helps you turn large-model search results, cited source platforms, and reference article structures into publishable content and post-publish review notes.
+<h1 align="center">GEO Copilot</h1>
 
-The workflow is designed for practitioners who repeatedly ask LLMs product-selection questions, inspect the cited platforms, rewrite content for those platforms, publish it, and then test the same question again after a few days.
+<p align="center">
+  A Chrome/Edge extension for product-focused GEO workflows: LLM source analysis, platform matching, content rewriting, and post-publish review.
+</p>
 
-## What It Does
+<p align="center">
+  <a href="PRIVACY.md">Privacy</a>
+  |
+  <a href="STORE_LISTING.md">Store listing draft</a>
+  |
+  <a href="#install-locally">Install locally</a>
+  |
+  <a href="#package-for-store-submission">Package</a>
+</p>
 
-- Captures LLM answers and source links from pages such as DeepSeek, Qwen, Doubao, Kimi, ChatGPT, and Claude.
-- Detects recommended product models, source domains, platform signals, answer structure, and content gaps.
-- Captures article structure from ordinary websites, forums, blogs, industry platforms, and official pages.
-- Separates LLM platforms from content platforms to avoid mixed analysis.
-- Uses an OpenAI-compatible API to generate GEO diagnosis, platform strategy, publish-ready drafts, and post-publish review conclusions.
-- Supports manual `GEO START` analysis so each new page is analyzed only when you explicitly start it.
-- Stores data locally in `chrome.storage.local` by default.
+![GEO Copilot hero](docs/images/hero.svg)
 
-## Core Workflow
+## Why GEO Copilot
 
-1. Search a product-related question in a general LLM platform.
-2. Open GEO Copilot and click `GEO START` to capture the answer, recommended products, and cited source links.
-3. Open the cited source platforms and capture reference article structures.
-4. Go to the dashboard and generate a source diagnosis.
-5. Paste the target product information and reference structure into the `GEO投放仿写` section.
-6. Generate a publish-ready article that borrows structure but rewrites title, angle, paragraph order, cases, FAQ, and parameter table to reduce duplication risk.
-7. Publish the article on the matched platform.
-8. After a few days, search the same question again and paste the new LLM answer into `发布后复测` to get the next optimization actions.
+GEO Copilot is built around a practical GEO loop:
 
-## Dashboard Sections
+1. Search a product-related question in a general LLM.
+2. Capture the answer, recommended products, and cited source links.
+3. Open the cited platforms and learn the article structure.
+4. Rewrite a publish-ready article for the matched platform.
+5. Publish it, wait a few days, and test the same question again.
+6. Use the review result to plan the next optimization round.
 
-- `AI诊断`: analyzes model source patterns, platform priority, content gaps, and recommended article structure.
-- `GEO投放仿写`: turns the current product information and reference article structure into a publish-ready article.
-- `发布后复测`: compares post-publish model answers and checks whether your product or platform source is being recommended.
-- `设置`: stores only long-term basics such as company/brand, industry scenario, banned claims, and API settings.
-- `记录`: keeps diagnosis reports, drafts, review notes, and captured data separately.
+![GEO Copilot workflow](docs/images/workflow.svg)
+
+## Preview
+
+![GEO Copilot dashboard preview](docs/images/dashboard-preview.svg)
+
+## Features
+
+- Capture LLM answers and source links from platforms such as DeepSeek, Qwen, Doubao, Kimi, ChatGPT, and Claude.
+- Detect recommended product models, source domains, platform signals, answer structure, and content gaps.
+- Capture article structures from ordinary websites, forums, blogs, industry platforms, and official pages.
+- Separate LLM platforms from content platforms to avoid mixed analysis.
+- Generate GEO diagnosis, platform priority, article structure, publish-ready drafts, and post-publish review conclusions.
+- Rewrite reference content by borrowing structure while changing title angle, paragraph order, cases, FAQ, and parameter table.
+- Store data locally in `chrome.storage.local` by default.
+- Start analysis manually with `GEO START`, so each page is analyzed only when you choose.
+
+## Dashboard
+
+| Section | Purpose |
+| --- | --- |
+| AI Diagnosis | Analyze model source patterns, platform priority, content gaps, and recommended article structure. |
+| GEO Rewrite | Turn reference structure and current product information into a publish-ready article. |
+| Post-publish Review | Compare new LLM answers after publishing and plan the next optimization round. |
+| Settings | Store long-term basics such as company/brand, industry scenario, banned claims, and API settings. |
+| Records | Keep diagnosis reports, drafts, review notes, and captured data separately. |
 
 ## API Providers
 
@@ -45,7 +70,7 @@ The dashboard supports OpenAI-compatible `/chat/completions` APIs. Built-in pres
 - OpenAI
 - Custom OpenAI-compatible endpoint
 
-API keys are stored only in the local browser storage of the installed extension.
+API keys are stored only in local browser extension storage.
 
 ## Install Locally
 
@@ -60,38 +85,34 @@ API keys are stored only in the local browser storage of the installed extension
 Create a ZIP package with the extension files at the root:
 
 ```powershell
-Compress-Archive -Path manifest.json,popup.html,dashboard.html,src,assets,README.md,PRIVACY.md -DestinationPath geo-copilot-v0.1.0.zip -Force
+Compress-Archive -Path manifest.json,popup.html,dashboard.html,src,assets,README.md,PRIVACY.md,STORE_LISTING.md -DestinationPath geo-copilot-v0.1.0.zip -Force
 ```
 
 Do not include `.git`, `demo`, `node_modules`, or existing `.zip` files in the store package.
 
-## File Structure
+## Repository Structure
 
 ```text
 manifest.json
 popup.html
 dashboard.html
 src/
-  analyzer.js
-  background.js
-  content.js
-  content.css
-  dashboard.js
-  popup.js
-  ui.css
 assets/
-  icons/
+docs/images/
 demo/
 README.md
 PRIVACY.md
+STORE_LISTING.md
 ```
 
 ## Privacy
 
-GEO Copilot does not run a backend service. Captured page data, diagnosis reports, generated drafts, and API settings are stored locally in the browser unless you explicitly export or copy them. When you use an external model API, the prompt content is sent directly from your browser to the API endpoint you configure.
+GEO Copilot does not run a backend service. Captured page data, diagnosis reports, generated drafts, and API settings are stored locally in the browser unless you explicitly export or copy them.
+
+When you use an external model API, prompt content is sent directly from your browser to the API endpoint you configure.
 
 See [PRIVACY.md](PRIVACY.md) for details.
 
 ## Status
 
-This is an MVP for validating a practical GEO workflow. It is suitable for local testing and store submission preparation, but you should review permissions, privacy text, screenshots, and store listing copy before public release.
+This is an MVP for validating a practical GEO workflow. Before public store release, review permissions, privacy text, screenshots, support links, and store listing copy.

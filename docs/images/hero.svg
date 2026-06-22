@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">GEO Copilot hero</title>
+  <desc id="desc">GEO Copilot browser extension hero image showing LLM source analysis, platform matching, content rewriting, and post-publish review.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="640">
+      <stop offset="0" stop-color="#0E766A"/>
+      <stop offset="0.52" stop-color="#145C82"/>
+      <stop offset="1" stop-color="#263B74"/>
+    </linearGradient>
+    <linearGradient id="line" x1="280" y1="270" x2="1060" y2="310">
+      <stop offset="0" stop-color="#9FFFE3"/>
+      <stop offset="1" stop-color="#F7D06A"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#082F49" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="640" rx="34" fill="url(#bg)"/>
+  <circle cx="1030" cy="118" r="260" fill="#FFFFFF" opacity="0.06"/>
+  <circle cx="176" cy="530" r="210" fill="#FFFFFF" opacity="0.05"/>
+  <g transform="translate(86 78)">
+    <rect x="0" y="0" width="168" height="168" rx="38" fill="#FFFFFF" opacity="0.13"/>
+    <circle cx="84" cy="80" r="48" fill="none" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="5"/>
+    <path d="M42 96C64 58 98 52 128 48" fill="none" stroke="url(#line)" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="42" cy="96" r="10" fill="#9FFFE3"/>
+    <circle cx="128" cy="48" r="10" fill="#F7D06A"/>
+    <text x="84" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="900" fill="#FFFFFF">GEO</text>
+  </g>
+  <text x="290" y="145" font-family="Arial, sans-serif" font-size="72" font-weight="900" fill="#FFFFFF">GEO Copilot</text>
+  <text x="292" y="202" font-family="Arial, sans-serif" font-size="28" fill="#D8FFF6">LLM source analysis, platform matching, content rewriting, and post-publish review.</text>
+  <g transform="translate(118 292)" filter="url(#shadow)">
+    <rect width="1044" height="198" rx="22" fill="#FFFFFF"/>
+    <g transform="translate(44 44)">
+      <circle cx="40" cy="55" r="34" fill="#E8F7F4"/>
+      <text x="40" y="64" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#0E766A">1</text>
+      <text x="92" y="44" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="#0F172A">Search LLM answer</text>
+      <text x="92" y="78" font-family="Arial, sans-serif" font-size="17" fill="#64748B">Capture recommendations and cited sources</text>
+    </g>
+    <path d="M316 98H430" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
+    <g transform="translate(454 44)">
+      <circle cx="40" cy="55" r="34" fill="#EAF2FF"/>
+      <text x="40" y="64" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#145C82">2</text>
+      <text x="92" y="44" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="#0F172A">Match platforms</text>
+      <text x="92" y="78" font-family="Arial, sans-serif" font-size="17" fill="#64748B">Find article structures worth publishing to</text>
+    </g>
+    <path d="M690 98H804" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
+    <g transform="translate(828 44)">
+      <circle cx="40" cy="55" r="34" fill="#FFF4D8"/>
+      <text x="40" y="64" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#9A5B00">3</text>
+      <text x="92" y="44" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="#0F172A">Rewrite & review</text>
+      <text x="92" y="78" font-family="Arial, sans-serif" font-size="17" fill="#64748B">Publish, test again, and optimize next round</text>
+    </g>
+  </g>
+</svg>

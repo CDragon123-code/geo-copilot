@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">GEO Copilot dashboard preview</title>
+  <desc id="desc">A mock dashboard screenshot for GEO Copilot showing diagnosis, rewrite, and review sections.</desc>
+  <rect width="1280" height="760" fill="#F5F7FA"/>
+  <rect x="48" y="44" width="1184" height="672" rx="18" fill="#FFFFFF" stroke="#DCE3EE"/>
+  <rect x="48" y="44" width="232" height="672" rx="18" fill="#FFFFFF"/>
+  <line x1="280" y1="44" x2="280" y2="716" stroke="#DCE3EE"/>
+  <text x="82" y="94" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#0F172A">GEO Copilot</text>
+  <text x="82" y="122" font-family="Arial, sans-serif" font-size="14" fill="#64748B">Closed-loop GEO workspace</text>
+  <rect x="76" y="170" width="172" height="42" rx="8" fill="#E8F3F1"/>
+  <text x="98" y="197" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#0F5C52">AI Diagnosis</text>
+  <text x="98" y="252" font-family="Arial, sans-serif" font-size="16" fill="#334155">Settings</text>
+  <text x="98" y="308" font-family="Arial, sans-serif" font-size="16" fill="#334155">Records</text>
+  <text x="322" y="102" font-family="Arial, sans-serif" font-size="34" font-weight="900" fill="#0F172A">GEO Closed-loop Workspace</text>
+  <text x="324" y="132" font-family="Arial, sans-serif" font-size="16" fill="#64748B">Search, capture, rewrite, publish, and test again.</text>
+  <g transform="translate(322 170)">
+    <rect width="842" height="120" rx="10" fill="#FFFFFF" stroke="#DCE3EE"/>
+    <text x="24" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#0F172A">1. Model Source Diagnosis</text>
+    <text x="24" y="70" font-family="Arial, sans-serif" font-size="15" fill="#64748B">Analyze LLM cited sources, platform weight, recommendation logic, and content gaps.</text>
+    <rect x="620" y="36" width="160" height="42" rx="7" fill="#136F63"/>
+    <text x="700" y="63" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#FFFFFF">Generate diagnosis</text>
+  </g>
+  <g transform="translate(322 318)">
+    <rect width="842" height="154" rx="10" fill="#FFFFFF" stroke="#DCE3EE"/>
+    <text x="24" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#0F172A">2. Structure Rewrite + Originality</text>
+    <rect x="24" y="62" width="520" height="66" rx="8" fill="#F8FAFC" stroke="#DCE3EE"/>
+    <text x="44" y="98" font-family="Arial, sans-serif" font-size="15" fill="#64748B">Paste reference structure + target product information</text>
+    <rect x="620" y="78" width="160" height="42" rx="7" fill="#136F63"/>
+    <text x="700" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#FFFFFF">Generate draft</text>
+  </g>
+  <g transform="translate(322 500)">
+    <rect width="842" height="154" rx="10" fill="#FFFFFF" stroke="#DCE3EE"/>
+    <text x="24" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="900" fill="#0F172A">3. Post-publish Review</text>
+    <rect x="24" y="62" width="520" height="66" rx="8" fill="#F8FAFC" stroke="#DCE3EE"/>
+    <text x="44" y="98" font-family="Arial, sans-serif" font-size="15" fill="#64748B">Paste the same question and new LLM answer after publishing</text>
+    <rect x="620" y="78" width="160" height="42" rx="7" fill="#145C82"/>
+    <text x="700" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#FFFFFF">Review result</text>
+  </g>
+</svg>

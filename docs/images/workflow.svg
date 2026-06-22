@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="280" viewBox="0 0 1180 280" role="img" aria-labelledby="title desc">
+  <title id="title">GEO Copilot workflow</title>
+  <desc id="desc">Workflow diagram for GEO Copilot.</desc>
+  <rect width="1180" height="280" rx="18" fill="#F8FAFC"/>
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(40 56)">
+      <circle cx="54" cy="54" r="50" fill="#E8F3F1"/>
+      <text x="54" y="66" text-anchor="middle" font-size="34" font-weight="900" fill="#0F5C52">1</text>
+      <text x="0" y="140" font-size="18" font-weight="800" fill="#0F172A">Ask LLM</text>
+      <text x="0" y="166" font-size="14" fill="#64748B">Search product questions</text>
+    </g>
+    <path d="M160 110H260" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+    <g transform="translate(280 56)">
+      <circle cx="54" cy="54" r="50" fill="#EAF2FF"/>
+      <text x="54" y="66" text-anchor="middle" font-size="34" font-weight="900" fill="#145C82">2</text>
+      <text x="0" y="140" font-size="18" font-weight="800" fill="#0F172A">Capture sources</text>
+      <text x="0" y="166" font-size="14" fill="#64748B">Collect citations and platforms</text>
+    </g>
+    <path d="M400 110H500" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+    <g transform="translate(520 56)">
+      <circle cx="54" cy="54" r="50" fill="#FFF4D8"/>
+      <text x="54" y="66" text-anchor="middle" font-size="34" font-weight="900" fill="#9A5B00">3</text>
+      <text x="0" y="140" font-size="18" font-weight="800" fill="#0F172A">Rewrite article</text>
+      <text x="0" y="166" font-size="14" fill="#64748B">Borrow structure, avoid duplication</text>
+    </g>
+    <path d="M640 110H740" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+    <g transform="translate(760 56)">
+      <circle cx="54" cy="54" r="50" fill="#E8F3F1"/>
+      <text x="54" y="66" text-anchor="middle" font-size="34" font-weight="900" fill="#0F5C52">4</text>
+      <text x="0" y="140" font-size="18" font-weight="800" fill="#0F172A">Publish</text>
+      <text x="0" y="166" font-size="14" fill="#64748B">Post to matched platform</text>
+    </g>
+    <path d="M880 110H980" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+    <g transform="translate(1000 56)">
+      <circle cx="54" cy="54" r="50" fill="#EAF2FF"/>
+      <text x="54" y="66" text-anchor="middle" font-size="34" font-weight="900" fill="#145C82">5</text>
+      <text x="0" y="140" font-size="18" font-weight="800" fill="#0F172A">Review</text>
+      <text x="0" y="166" font-size="14" fill="#64748B">Test the same question again</text>
+    </g>
+  </g>
+</svg>
