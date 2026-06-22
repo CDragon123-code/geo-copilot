@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GEO Copilot</title>
+    <link rel="stylesheet" href="src/ui.css">
+  </head>
+  <body class="popup-shell">
+    <main class="popup">
+      <header class="popup-header">
+        <div>
+          <h1>GEO Copilot</h1>
+          <p id="popupStatus">打开面板后点击 GEO START 分析当前页面</p>
+        </div>
+        <button id="openPanel" class="icon-button" title="打开页面侧边栏" aria-label="打开 GEO Copilot 面板">
+          <img src="assets/icons/icon-48.png" alt="">
+        </button>
+      </header>
+
+      <section class="quick-grid">
+        <button id="captureArticle" class="quick-card">
+          <strong>保存文章结构</strong>
+          <span>手动分析当前页，并保存标题、大纲、关键词和提示词</span>
+        </button>
+        <button id="captureLLM" class="quick-card">
+          <strong>保存模型诊断</strong>
+          <span>手动分析当前页，并保存来源、型号匹配和平台优先级</span>
+        </button>
+      </section>
+
+      <section class="summary">
+        <div>
+          <span>文章样本</span>
+          <strong id="captureCount">0</strong>
+        </div>
+        <div>
+          <span>模型诊断</span>
+          <strong id="analysisCount">0</strong>
+        </div>
+      </section>
+
+      <div class="popup-actions">
+        <button id="openDashboard" class="primary-button">打开工作台</button>
+        <button id="clearData" class="danger-button">清空历史数据</button>
+      </div>
+    </main>
+    <script src="src/popup.js"></script>
+  </body>
+</html>

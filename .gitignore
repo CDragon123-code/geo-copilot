@@ -1,0 +1,25 @@
+# Extension packages
+*.zip
+*.crx
+*.pem
+
+# Dependencies and build output
+node_modules/
+dist/
+build/
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local secrets
+.env
+.env.*

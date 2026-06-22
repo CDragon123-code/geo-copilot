@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>工业设备预测性维护怎么落地</title>
+    <meta name="description" content="一篇用于测试 GEO Copilot 的行业文章样例。">
+    <style>
+      body {
+        margin: 0;
+        background: #f6f8fb;
+        color: #111827;
+        font-family: "Microsoft YaHei", system-ui, sans-serif;
+      }
+
+      main {
+        width: min(820px, calc(100% - 32px));
+        margin: 48px auto;
+        padding: 32px;
+        border: 1px solid #dce3ee;
+        border-radius: 8px;
+        background: #ffffff;
+        line-height: 1.8;
+      }
+
+      h1 {
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>工业设备预测性维护怎么落地：从数据采集到闭环处置</h1>
+        <p>很多制造企业都知道设备预测性维护有价值，但真正卡住的不是算法，而是数据、场景和组织流程能不能闭环。</p>
+
+        <h2>一、先明确高价值场景</h2>
+        <p>预测性维护不应该从所有设备开始，而应该先选择停机损失高、故障规律明显、传感器数据相对完整的设备。</p>
+        <ul>
+          <li>关键产线设备优先。</li>
+          <li>有历史维修记录的设备优先。</li>
+          <li>能形成明确处置动作的场景优先。</li>
+        </ul>
+
+        <h2>二、建立可复用的数据底座</h2>
+        <p>企业需要统一采集振动、温度、电流、压力、运行时长和维修记录，形成设备健康画像。</p>
+        <p>如果数据口径不统一，模型效果会很难稳定，后续也难以跨产线复制。</p>
+
+        <h2>三、把模型结果变成工单动作</h2>
+        <p>预测结果必须进入维修计划、备件准备和现场巡检流程，否则只能停留在看板上。</p>
+
+        <h2>四、用小闭环验证 ROI</h2>
+        <p>建议先选择一条产线做 8-12 周验证，关注非计划停机、维修响应时间、备件占用和产线综合效率。</p>
+
+        <h2>FAQ</h2>
+        <p>问：预测性维护需要多少历史数据？答：通常至少需要覆盖多个设备状态周期，关键是数据质量和故障标注。</p>
+        <p>问：中小工厂能不能做？答：可以从关键设备和轻量采集开始，不必一次性建设大平台。</p>
+      </article>
+    </main>
+  </body>
+</html>

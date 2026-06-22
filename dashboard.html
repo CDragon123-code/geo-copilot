@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GEO Copilot 工作台</title>
+    <link rel="stylesheet" href="src/ui.css">
+  </head>
+  <body>
+    <main class="app-shell simple-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <strong>GEO Copilot</strong>
+          <span>抓取、诊断、仿写，让GEO投放更精准。</span>
+        </div>
+        <nav class="nav-tabs" aria-label="工作台导航">
+          <button class="nav-tab is-active" data-view="ai">AI诊断</button>
+          <button class="nav-tab" data-view="settings">设置</button>
+          <button class="nav-tab" data-view="records">记录</button>
+        </nav>
+      </aside>
+
+      <section class="workspace">
+        <header class="workspace-header">
+          <div>
+            <h1 id="viewTitle">AI诊断</h1>
+            <p id="viewSubtitle">基于模型回答、引用来源、竞品型号和文章样本，生成诊断、策略和可发布内容。</p>
+          </div>
+          <button id="exportData" class="secondary-button">导出数据</button>
+        </header>
+        <div id="viewMount" class="view-mount"></div>
+      </section>
+    </main>
+    <script src="src/dashboard.js"></script>
+  </body>
+</html>

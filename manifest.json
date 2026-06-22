@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "GEO Copilot",
+  "description": "采集行业平台文章结构，分析大模型回答来源，并生成可落地的 GEO 诊断和发布内容。",
+  "version": "0.1.0",
+  "permissions": ["activeTab", "clipboardWrite", "storage", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "32": "assets/icons/icon-32.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "GEO Copilot",
+    "default_icon": {
+      "16": "assets/icons/icon-16.png",
+      "32": "assets/icons/icon-32.png",
+      "48": "assets/icons/icon-48.png",
+      "128": "assets/icons/icon-128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/analyzer.js", "src/content.js"],
+      "css": ["src/content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_page": "dashboard.html"
+}

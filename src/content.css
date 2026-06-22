@@ -1,0 +1,322 @@
+.geo-copilot-root,
+.geo-copilot-root * {
+  box-sizing: border-box;
+  font-family: Inter, "Microsoft YaHei", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.geo-copilot-toggle {
+  position: fixed;
+  right: 18px;
+  bottom: 22px;
+  z-index: 2147483646;
+  width: 52px;
+  height: 52px;
+  border: 0;
+  border-radius: 8px;
+  background: #111827;
+  color: #f9fafb;
+  font-size: 15px;
+  font-weight: 800;
+  box-shadow: 0 14px 40px rgba(17, 24, 39, 0.24);
+  cursor: pointer;
+}
+
+.geo-copilot-panel {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 2147483647;
+  display: none;
+  width: min(420px, calc(100vw - 28px));
+  max-height: calc(100vh - 36px);
+  overflow: hidden;
+  border: 1px solid #d7dee8;
+  border-radius: 8px;
+  background: #fbfcfe;
+  color: #111827;
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.2);
+}
+
+.geo-copilot-panel.is-open {
+  display: flex;
+  flex-direction: column;
+}
+
+.geo-copilot-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #e4e9f1;
+  background: #ffffff;
+}
+
+.geo-copilot-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.geo-copilot-title strong {
+  font-size: 15px;
+}
+
+.geo-copilot-title span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.geo-copilot-close {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #475569;
+  cursor: pointer;
+}
+
+.geo-copilot-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 14px;
+  overflow: auto;
+}
+
+.geo-copilot-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  padding: 4px;
+  border: 1px solid #dce3ee;
+  border-radius: 8px;
+  background: #eef3f8;
+}
+
+.geo-copilot-tabs.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.geo-copilot-tab {
+  min-height: 34px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: #475569;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.geo-copilot-tab.is-active {
+  background: #ffffff;
+  color: #111827;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+
+.geo-copilot-card {
+  border: 1px solid #dde5ef;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.geo-copilot-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px;
+  border-bottom: 1px solid #edf1f6;
+}
+
+.geo-copilot-card-title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.geo-copilot-score {
+  min-width: 42px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #e8f4ff;
+  color: #075985;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.geo-copilot-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+}
+
+.geo-copilot-kv {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  gap: 8px;
+  align-items: start;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.geo-copilot-kv span:first-child {
+  color: #64748b;
+}
+
+.geo-copilot-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.geo-copilot-tag {
+  max-width: 100%;
+  padding: 4px 7px;
+  border: 1px solid #dbe4ef;
+  border-radius: 6px;
+  background: #f8fafc;
+  color: #334155;
+  font-size: 12px;
+}
+
+.geo-copilot-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #334155;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.geo-copilot-section-title {
+  margin: 4px 0 0;
+  color: #111827;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.geo-copilot-model-list {
+  display: grid;
+  gap: 7px;
+}
+
+.geo-copilot-model-row {
+  display: grid;
+  gap: 3px;
+  padding: 9px;
+  border: 1px solid #e1e8f0;
+  border-radius: 6px;
+  background: #f8fafc;
+}
+
+.geo-copilot-model-row strong {
+  color: #111827;
+  font-size: 12px;
+}
+
+.geo-copilot-model-row span,
+.geo-copilot-empty-mini {
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.geo-copilot-empty-mini {
+  padding: 10px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.geo-copilot-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.geo-copilot-actions.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.geo-copilot-button {
+  min-height: 36px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #1f2937;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.geo-copilot-button.primary {
+  border-color: #136f63;
+  background: #136f63;
+  color: #ffffff;
+}
+
+.geo-copilot-button.danger {
+  border-color: #fecaca;
+  background: #fff1f2;
+  color: #9f1239;
+}
+
+.geo-copilot-page-title {
+  color: #111827;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.geo-copilot-page-url {
+  overflow-wrap: anywhere;
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.geo-copilot-title span {
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.geo-copilot-note {
+  margin: 0;
+  color: #334155;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.geo-copilot-output {
+  min-height: 120px;
+  max-height: 220px;
+  overflow: auto;
+  padding: 10px;
+  border: 1px solid #dce3ee;
+  border-radius: 6px;
+  background: #f8fafc;
+  color: #0f172a;
+  white-space: pre-wrap;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+@media (max-width: 560px) {
+  .geo-copilot-panel {
+    top: 8px;
+    right: 8px;
+    width: calc(100vw - 16px);
+    max-height: calc(100vh - 16px);
+  }
+
+  .geo-copilot-toggle {
+    right: 12px;
+    bottom: 14px;
+  }
+}
