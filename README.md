@@ -1,8 +1,17 @@
 <p align="center">
-  <img src="assets/icons/icon-128.png" width="96" alt="GEO Copilot icon">
+  <img src="https://cdn.jsdelivr.net/gh/CDragon123/geo-copilot@main/assets/icons/icon-128.png" width="96" alt="GEO Copilot icon">
 </p>
 
 <h1 align="center">GEO Copilot</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/GEO-Copilot-0E766A?style=flat-square" alt="GEO Copilot">
+  <img src="https://img.shields.io/badge/Manifest-V3-145C82?style=flat-square" alt="Manifest V3">
+  <img src="https://img.shields.io/badge/Chrome-Extension-263B74?style=flat-square" alt="Chrome Extension">
+  <img src="https://img.shields.io/badge/Edge-Add--ons-0E766A?style=flat-square" alt="Edge Add-ons">
+  <img src="https://img.shields.io/badge/Privacy-Local--first-145C82?style=flat-square" alt="Local-first privacy">
+  <img src="https://img.shields.io/badge/API-OpenAI--compatible-F7D06A?style=flat-square" alt="OpenAI-compatible API">
+</p>
 
 <p align="center">
   A Chrome/Edge extension for product-focused GEO workflows: LLM source analysis, platform matching, content rewriting, and post-publish review.
@@ -18,7 +27,7 @@
   <a href="#package-for-store-submission">Package</a>
 </p>
 
-![GEO Copilot hero](docs/images/hero.svg)
+![GEO Copilot hero](https://cdn.jsdelivr.net/gh/CDragon123/geo-copilot@main/docs/images/hero.svg)
 
 ## Why GEO Copilot
 
@@ -31,11 +40,11 @@ GEO Copilot is built around a practical GEO loop:
 5. Publish it, wait a few days, and test the same question again.
 6. Use the review result to plan the next optimization round.
 
-![GEO Copilot workflow](docs/images/workflow.svg)
+![GEO Copilot workflow](https://cdn.jsdelivr.net/gh/CDragon123/geo-copilot@main/docs/images/workflow.svg)
 
 ## Preview
 
-![GEO Copilot dashboard preview](docs/images/dashboard-preview.svg)
+![GEO Copilot dashboard preview](https://cdn.jsdelivr.net/gh/CDragon123/geo-copilot@main/docs/images/dashboard-preview.svg)
 
 ## Features
 
