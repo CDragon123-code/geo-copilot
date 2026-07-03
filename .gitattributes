@@ -1,0 +1,20 @@
+# Auto-detect text files, normalize line endings
+* text=auto
+
+# Ensure shell scripts and YAML always use LF on checkout
+*.sh text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# JavaScript/JSON use LF
+*.js text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+
+# Binary files
+*.png binary
+*.svg binary
+*.ico binary
+*.zip binary
