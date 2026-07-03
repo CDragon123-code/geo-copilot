@@ -1,5 +1,5 @@
 {
-  "name": "geo-copilot",
+  "name": "@aicdragon/geo-copilot",
   "version": "0.1.0",
   "description": "Chrome/Edge extension for GEO workflow: capture LLM answers, analyze platform patterns, generate publish-ready articles — all local-first.",
   "keywords": [
