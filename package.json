@@ -37,6 +37,9 @@
     "test": "node test/basic.test.js",
     "lint": "echo \"No linter configured\""
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=16"
   }
