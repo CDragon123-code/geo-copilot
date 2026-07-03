@@ -1,0 +1,43 @@
+{
+  "name": "geo-copilot",
+  "version": "0.1.0",
+  "description": "Chrome/Edge extension for GEO workflow: capture LLM answers, analyze platform patterns, generate publish-ready articles — all local-first.",
+  "keywords": [
+    "geo",
+    "generative-engine-optimization",
+    "chrome-extension",
+    "edge-extension",
+    "llm",
+    "ai-seo",
+    "content-writing",
+    "browser-extension"
+  ],
+  "homepage": "https://github.com/CDragon123-code/geo-copilot",
+  "bugs": {
+    "url": "https://github.com/CDragon123-code/geo-copilot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CDragon123-code/geo-copilot.git"
+  },
+  "license": "MIT",
+  "author": "CDragon",
+  "main": "src/background.js",
+  "files": [
+    "manifest.json",
+    "popup.html",
+    "dashboard.html",
+    "src/",
+    "assets/",
+    "README.md",
+    "PRIVACY.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/basic.test.js",
+    "lint": "echo \"No linter configured\""
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
