@@ -119,3 +119,15 @@ See [PRIVACY.md](PRIVACY.md) for details.
 ## Status
 
 This is an MVP for validating a practical GEO workflow. Before public store release, review permissions, privacy text, screenshots, support links, and store listing copy.
+
+---
+
+## About the Author
+
+<p align="center">
+  <img src="qrcode.jpg" alt="AICDragon" width="200">
+</p>
+
+<p align="center"><b>🐉 AICDragon</b> — AI Tools & Real-World Practice</p>
+<p align="center">Open-source AI agent automation · local LLM · hands-on guides</p>
+<p align="center">Weekly deep-dives on AI in action. Find me as <b>AICDragon</b> across all platforms.</p>
