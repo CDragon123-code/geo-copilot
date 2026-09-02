@@ -10,6 +10,10 @@
 </p>
 
 <p align="center">
+  <b>English</b> | <a href="README.zh-CN.md">简体中文</a>
+</p>
+
+<p align="center">
   A Chrome/Edge extension for product-focused GEO workflows: LLM source analysis, platform matching, content rewriting, and post-publish review.
 </p>
 
